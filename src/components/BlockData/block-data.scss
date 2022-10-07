@@ -1,0 +1,33 @@
+.block-data {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+    padding: 59px 112px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .block-data__title {
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .block-data__subtitle {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .loader {
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 1024px) {
+    .block-data {
+        padding: 9px 13px;
+    }
+}

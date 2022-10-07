@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import "./variables.scss";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 2px;
+    border-radius: 2px;
+    background-color: #414141;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-width: 1px 1px 1px 2px;
+    background-color: #565656;
+}
+
+::-webkit-scrollbar-track {
+    border-width: 1px;
+    background-color: #121415;
+    border-color: transparent;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    position: relative;
+    z-index: 1;
+    font-family: "Montserrat";
+    font-style: normal;
+    background-color: $clrBg1;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: $containerWidth;
+    padding: 0 $containerSidePadding;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    @media (max-width: 600px) {
+        padding: 0 10px;
+    }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+.fadeHeight-enter-active,
+.fadeHeight-leave-active {
+    transition: all 0.4s;
+    max-height: 166px;
+}
+.fadeHeight-enter,
+.fadeHeight-leave-to {
+    opacity: 0;
+    max-height: 0px;
+}

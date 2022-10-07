@@ -1,0 +1,102 @@
+@import "../../variables.scss";
+
+.our-investments {
+    .invest-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        margin-bottom: 100px;
+
+        &-item {
+            position: relative;
+            min-height: 450px;
+            text-align: center;
+            background-color: $clrBg1;
+            border-radius: 10px;
+
+            &-bg-1 {
+                position: absolute;
+                top: 20px;
+                right: 0;
+                width: 90px;
+                height: 77px;
+            }
+
+            &-bg-2 {
+                position: absolute;
+                bottom: 20px;
+                left: 0;
+                width: 90px;
+                height: 77px;
+            }
+
+            &-content {
+                position: relative;
+                min-height: 450px;
+                height: 100%;
+                padding-top: 90px;
+                border-radius: inherit;
+                overflow: hidden;
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+            &-title {
+                font-weight: 700;
+                font-size: 24px;
+            }
+
+            &-desc {
+                margin-top: 20px;
+                font-weight: 400;
+                font-size: 16px;
+                padding: 0 15px;
+                line-height: 24.4px;
+
+                p:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+                margin: -1px;
+                border-radius: inherit;
+                background: linear-gradient(180deg, rgba(68, 108, 246, 0.5), rgba(100, 201, 252, 0.5));
+            }
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .our-investments {
+        .invest-list {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .our-investments {
+        .invest-list {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .our-investments {
+        .invest-list-item {
+            min-height: 370px;
+
+            &-content {
+                min-height: 370px;
+            }
+        }
+    }
+}

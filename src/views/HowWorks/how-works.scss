@@ -1,0 +1,77 @@
+.how-work {
+    margin-bottom: 70px;
+
+    .card {
+        max-width: 920px;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.3) url("../../assets/images/work-card-bg.png") no-repeat;
+        background-size: cover;
+        padding: 25px 90px 25px 30px;
+        margin-bottom: 30px;
+
+        .card-number {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 120%;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .card-number::before {
+            content: "";
+            width: 53px;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            bottom: -5px;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 120%;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            max-width: 420px;
+            width: 100%;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.085em;
+            margin-left: auto;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .how-work {
+        .card {
+            padding-right: 2vw;
+
+            .card-text {
+                max-width: 380px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .how-work {
+        .card {
+            padding: 10px 10px 20px;
+
+            .card-text {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}

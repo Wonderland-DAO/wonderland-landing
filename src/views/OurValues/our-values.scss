@@ -1,0 +1,93 @@
+.out-values {
+    .values-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        margin-bottom: 100px;
+
+        .list-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            min-height: 400px;
+            background: #1d2022;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .item-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            .item-content {
+                > * {
+                    margin-top: 20px;
+
+                    &:first-child {
+                        margin-top: 40px;
+                    }
+                }
+
+                .item-img {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 150px;
+
+                    .item-icon {
+                        position: absolute;
+                        max-height: 150px;
+                        height: 100%;
+                    }
+                }
+
+                .item-title {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+
+                .item-desc {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    max-width: 410px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .out-values {
+        .values-list {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .out-values {
+        .values-list {
+            .list-item {
+                min-height: 330px;
+                padding-bottom: 40px;
+
+                .item-content {
+                    .item-img {
+                        height: 130px;
+
+                        .item-icon {
+                            height: 110px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

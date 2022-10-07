@@ -1,0 +1,21 @@
+@import "../../variables.scss";
+
+.page-not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+
+    .page-not-found__title {
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .page-not-found__subtitle {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
