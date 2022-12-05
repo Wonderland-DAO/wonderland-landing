@@ -50,9 +50,6 @@ function Header() {
             </Link>
             <div className={classNames("nav-wrap", { "nav-mobile": mobileMenu })}>
                 <div className="nav">
-                    <Link color="inherit" underline="none" className="nav-link active" href="https://app.wonderland.money" target="_blank">
-                        <span>Enter App</span>
-                    </Link>
                     <Link color="inherit" underline="none" className="nav-link" href="https://www.wonderlandforum.xyz" target="_blank">
                         <span>Governance Forum</span>
                     </Link>

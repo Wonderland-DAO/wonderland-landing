@@ -7532,6 +7532,11 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+magic-snowflakes@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/magic-snowflakes/-/magic-snowflakes-6.0.1.tgz#2e17fd82e5dbbc3c293481abd49d34544848c212"
+  integrity sha512-D6asLHNwvrkDtHfYzX/XzKAavw8LW3GiQgVa38id2NsmqXVMMs2VAfzP0TJRDF34YgKDfwRhDsnDLeI4Qdyr1Q==
+
 magic-string@^0.25.0, magic-string@^0.25.7:
   version "0.25.7"
   resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.25.7.tgz"

@@ -26,8 +26,8 @@ function Home() {
                         Our treasury deploys capital at the earliest stages of projects and uses advanced treasury management strategies to maximize capital growth
                     </p>
                 </div>
-                <Link className="button button-gradient" href="our-investments">
-                    Our investments
+                <Link className="button button-gradient" href="https://app.wonderland.money">
+                    Enter app
                 </Link>
             </section>
             <section className="blocks-data">

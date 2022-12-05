@@ -18,6 +18,7 @@
         "axios": "^0.27.2",
         "classnames": "^2.3.1",
         "intl": "^1.2.5",
+        "magic-snowflakes": "^6.0.1",
         "node-sass": "^6.0.1",
         "node-watch": "^0.7.1",
         "react": "^16.14.0",
